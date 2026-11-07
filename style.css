@@ -1,0 +1,107 @@
+
+/* General styling */
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    font-size: 28px;
+    color: #ffc107 !important;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+/* Hero section */
+
+.hero {
+    height: 100vh;
+    min-height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Food cards */
+
+.food-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Sections */
+
+section h2 {
+    font-weight: bold;
+}
+
+/* Reservation */
+
+#reservation form {
+    padding: 25px;
+    background: #fffaf0;
+    border-radius: 12px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
